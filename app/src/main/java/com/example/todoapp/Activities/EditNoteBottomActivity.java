@@ -93,6 +93,8 @@ public class EditNoteBottomActivity extends BottomSheetDialogFragment {
         Activity activity = getActivity();
         if (activity instanceof DialogCloseListener) {
             ((DialogCloseListener) activity).handleDialogClose(dialog);
+            dismiss();
         }
+        dismiss();
     }
 }
