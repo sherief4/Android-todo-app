@@ -105,43 +105,41 @@
     <EditText
         android:id="@+id/edit_details_edit_text"
         android:layout_width="249dp"
-        android:layout_height="255dp"
-        android:layout_marginEnd="33dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="start"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:singleLine="false"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/edit_type_edit_text"
-        app:layout_constraintTop_toTopOf="@+id/note_details_tv"
+        app:layout_constraintTop_toBottomOf="@+id/edit_type_edit_text"
         tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/save_edit_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="51dp"
-        android:layout_marginEnd="52dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="60dp"
         android:backgroundTint="@color/blue"
         android:text="@string/save"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_details_edit_text" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/cancel_edit_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="128dp"
         android:backgroundTint="@color/blue"
         android:text="@string/cancel"
         android:textColor="@color/white"
-        android:textStyle="bold"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/save_edit_btn" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/save_edit_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

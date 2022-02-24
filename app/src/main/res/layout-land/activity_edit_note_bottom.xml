@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="16dp">
+    android:paddingBottom="16dp"
+    >
 
     <EditText
         android:id="@+id/edit_title_bottom"
@@ -46,22 +47,22 @@
         android:id="@+id/btn_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="76dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="@color/in_app_background"
         android:text="@string/save"
         android:textColor="@color/blue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_details_bottom" />
+        app:layout_constraintStart_toEndOf="@+id/edit_title_bottom"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_dismiss"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginTop="64dp"
         android:backgroundTint="@color/in_app_background"
         android:text="@string/dismiss"
         android:textColor="@color/blue"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_save" />
+        app:layout_constraintStart_toStartOf="@+id/btn_save"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save" />
 </androidx.constraintlayout.widget.ConstraintLayout>

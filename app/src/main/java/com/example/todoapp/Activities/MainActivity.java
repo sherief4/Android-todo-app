@@ -7,9 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
 
 import com.example.todoapp.Adapter.Adapter;
 import com.example.todoapp.db.DataBaseAdapter;
@@ -18,7 +16,6 @@ import com.example.todoapp.R;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
@@ -27,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements DialogCloseListen
     RecyclerView homeRecyclerView;
     FloatingActionButton addNewNote;
 
-    TextView tv;
+
 
     Intent addNewIntent;
     Adapter adapter;
@@ -76,7 +73,6 @@ public class MainActivity extends AppCompatActivity implements DialogCloseListen
     @Override
     protected void onResume() {
         super.onResume();
-        Log.i("ACT", "onResume");
         notes = dbAdapter.getAllNotes();
         Collections.reverse(notes);
         homeRecyclerView.setAdapter(adapter);
