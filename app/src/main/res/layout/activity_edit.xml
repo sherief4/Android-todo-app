@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/in_app_background"
+    tools:context=".Activities.NewTaskActivity">
+
+    <TextView
+        android:id="@+id/note_type_tv2"
+        android:layout_width="83dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/type_txt"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note_title_tv" />
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/edit_title"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/note_title_tv"
+        android:layout_width="83dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/title_txt"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv" />
+
+    <EditText
+        android:id="@+id/edit_title_editText"
+        android:layout_width="249dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="23dp"
+        android:ems="10"
+        android:gravity="start"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/note_title_tv"
+        app:layout_constraintTop_toTopOf="@+id/note_title_tv"
+        tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:id="@+id/note_type_tv"
+        android:layout_width="83dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/type_txt"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note_title_tv" />
+
+    <EditText
+        android:id="@+id/edit_type_edit_text"
+        android:layout_width="249dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:gravity="start"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/edit_title_editText"
+        app:layout_constraintTop_toTopOf="@+id/note_type_tv"
+        tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/note_details_tv"
+        android:layout_width="83dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/details_txt"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note_type_tv2" />
+
+    <EditText
+        android:id="@+id/edit_details_edit_text"
+        android:layout_width="251dp"
+        android:layout_height="255dp"
+        android:layout_marginEnd="33dp"
+        android:ems="10"
+        android:gravity="start"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edit_type_edit_text"
+        app:layout_constraintTop_toTopOf="@+id/note_details_tv"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/save_edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="52dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_details_edit_text" />
+
+    <Button
+        android:id="@+id/cancel_edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="160dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/save_edit_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

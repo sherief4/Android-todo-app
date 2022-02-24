@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Todo App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_type">No type</string>
+    <string name="app_logo_description">App Logo</string>
+    <string name="tasksText">Tasks</string>
+    <string name="title_txt">Note Title</string>
+    <string name="type_txt">Note Type</string>
+    <string name="details_txt">Details</string>
+    <string name="enter_title">Enter Note Title</string>
+    <string name="enter_type">Enter Note Type</string>
+    <string name="details">Details</string>
+    <string name="title_activity_new_task">NewTaskActivity</string>
+    <string name="new_title">New Note</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="edit_title">Edit Note</string>
+    <string name="dismiss">Dismiss</string>
+</resources>
